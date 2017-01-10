@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Επικοινωνία Palazzo cafe</title>
+<meta charset="utf-8">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<meta name="description" content="Your description">
+<meta name="keywords" content="Your keywords">
+<meta name="author" content="Your name">
+<meta name = "format-detection" content = "telephone=yes" />
+<!--CSS-->
+<link rel="stylesheet" href="css/bootstrap.css" >
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/contact-form.css">
+<link rel="stylesheet" href="fonts/font-awesome.css">
+<!--JS-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/jquery.equalheights.js"></script> 
+<script src="js/TMForm.js"></script>
+<script src="js/modal.js"></script>  
+<script src="js/bootstrap-filestyle.js"></script> 
+<script src="js/jquery.ui.totop.js"></script>
+<script src='//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false'></script>
+<!--[if (gt IE 9)|!(IE)]><!-->
+<script src="js/wow/wow.js"></script>
+<script src="js/wow/device.min.js"></script>
+<script>
+    $(document).ready(function () {       
+      if ($('html').hasClass('desktop')) {
+        new WOW().init();
+      }   
+    });
+</script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+
+    <div id="ie6-alert" style="width: 100%; text-align:center;">
+    <img src="http://beatie6.frontcube.com/images/ie6.jpg" alt="Upgrade IE 6" width="640" height="344" border="0" usemap="#Map" longdesc="http://die6.frontcube.com" />
+      <map name="Map" id="Map"><area shape="rect" coords="496,201,604,329" href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank" alt="Download Interent Explorer" /><area shape="rect" coords="380,201,488,329" href="http://www.apple.com/safari/download/" target="_blank" alt="Download Apple Safari" /><area shape="rect" coords="268,202,376,330" href="http://www.opera.com/download/" target="_blank" alt="Download Opera" /><area shape="rect" coords="155,202,263,330" href="http://www.mozilla.com/" target="_blank" alt="Download Firefox" />
+        <area shape="rect" coords="35,201,143,329" href="http://www.google.com/chrome" target="_blank" alt="Download Google Chrome" />
+      </map>
+  </div>
+  <![endif]-->
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-34671706-1', 'auto');
+      ga('send', 'pageview');
+</script>
+</head>
+<body>
+<!--header-->
+<header>
+    <div class="container">
+        <h1 class="navbar-brand navbar-brand_ wow fadeInDown" data-wow-delay="0.2s"><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>
+        <div class="box clearfix">
+            <form id="search" class="search" action="search.php" method="GET" accept-charset="utf-8">
+                <input type="text" name="s" value="Αναζήτηση" onfocus="if (this.value == 'Αναζήτηση') {this.value=''}" onblur="if (this.value == '') {this.value='Αναζήτηση'}">
+                <a href="#" onClick="document.getElementById('search').submit()" class="fa fa-search"></a>
+            </form><br>
+            <a href="tel:2106728888"><img src="img/call-palazzo-banner.png" alt="Call Palazzo"></a>
+                    <a href="https://www.facebook.com/palazzodelivery" target="_blank"><img src="img/palazzo_facebook.png" alt="Palazzo Facebook"></a>
+                    <a href="https://twitter.com/PalazzoDelivery" target="_blank"><img src="img/palazzo_twitter.png" alt="Palazzo Twitter"></a>
+            <nav class="navbar navbar-default navbar-static-top tm_navbar clearfix" role="navigation">
+                <ul class="nav sf-menu clearfix">
+                    <li><a href="index.html">Αρχική</a></li>
+                    <li><a href="to-palazzo.html">Εμείς</a></li>
+                    <li class="sub-menu"><a href="palazzo-menu.html">Μενού</a><span></span>
+                        <ul class="submenu">
+                            <li><a href="#">Καφέδες</a><span class="fa fa-angle-right"></span>
+                                <ul class="submenu">
+                                    <li><a href="kafedes.html">Καφέδες</a></li>
+                                    <li><a href="rofimata.html">Ροφήματα</a></li>
+                                    <li><a href="ximoi.html">Χυμοί</a></li>
+                                    <li><a href="kafedes_sinodeutika.html">Κουλουράκια</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="sfoliates.html">Σφολιάτες</a></li>
+                            <li><a href="#">Ορεκτικά</a><span class="fa fa-angle-right"></span>
+                                <ul class="submenu">
+                                    <li><a href="omeletes.html">Ομελέτες</a></li>
+                                    <li><a href="tost.html">Τόστ</a></li>
+                                    <li><a href="rizoto.html">Ριζότο</a></li>
+                                    <li><a href="more_orektika.html">Περισσότερα Ορεκτικά</a></li>
+                                </ul> 
+                            </li>
+                            <li><a href="#">Σάντουιτς</a><span class="fa fa-angle-right"></span>
+                                <ul class="submenu">
+                                    <li><a href="freshsandwitch.html">Φρέσκο Σάντουιτς</a></li>
+                                    <li><a href="clubsandwitch.html">Club Sandwitch</a></li>
+                                    <li><a href="pocketsandwitch.html">Πίτες Pocket</a></li>
+                                    <li><a href="hamburger.html">Hamburger</a></li>
+                                    <li><a href="extra_ilika.html">Extra Υλικά</a></li>
+                                </ul> 
+                            </li>
+                            <li><a href="salates.html">Σαλάτες</a></li>
+                            <li><a href="zimarika.html">Ζυμαρικά</a></li>
+                            <li><a href="pizza.html">Πίτσες</a></li>
+                            <li><a href="#">Κρεατικά</a><span class="fa fa-angle-right"></span>
+                                <ul class="submenu">
+                                    <li><a href="kotopoula.html">Κοτόπουλο</a></li>
+                                    <li><a href="mpiftekia.html">Μπιφτέκι</a></li>
+                                    <li><a href="mprizoles.html">Μπριζόλες</a></li>
+                                    <li><a href="psaronefri.html">Ψαρονέφρι</a></li>
+                                    <li><a href="snitsel.html">Σνίτσελ</a></li>
+                                    <li><a href="mosxarisiofileto.html">Φιλέτο Μοσχ.</a></li>
+                                </ul> 
+                            </li>
+                            <li><a href="glika.html">Γλυκά</a></li>
+                            <li><a href="#">Κάβα</a><span class="fa fa-angle-right"></span>
+                                <ul class="submenu">
+                                    <li><a href="anapsiktika.html">Αναψυκτικά</a></li>
+                                    <li><a href="pota.html">Ποτά</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </li>
+                    <li><a href="prosfores-palazzo.html">Deals!</a></li>
+                    <li><a href="online-paraggelia.html">Online</a></li>
+                    <li class="active"><a href="epikoinonia-palazzo.html">Επικοινωνία</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<div class="content indent">
+    <div class="container">
+        <h2 class="indent1 wow fadeInUp">Επικοινωνηστε μαζι μας<span>Παρακάτω είναι ο χάρτης με την τοποθεσία του Palazzo, όπως και η φόρμα επικοινωνίας</span></h2>
+        <section class="content_map wow zoomIn">
+              <div class="google-map-api"> 
+                <div id="map-canvas" class="gmap"></div> 
+              </div> 
+        </section>
+    </div>
+    <div class="thumb-box12">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <h2 class="indent1 wow fadeInDown">Διευθυνση<span>Το κατάστημα Palazzo βρίσκετε 200 μέτρα από το METRO Χολαργού επί της οδού Ηρώων Πολυτεχνείου. Υπάρχει διαθέσιμος χώρος για προσωρινή στάθμευση.</span></h2>
+                    <div class="info">
+                        <p><strong>Διεύθυνση:</strong></p>
+                        <p>Ηρώων Πολυτεχνείου 39,<br>Κάτω Χαλάνδρι, ΤΚ:11523</p>
+                        <p><strong>Τηλέφωνα:</strong></p>
+                        <p>Καλέστε μας τώρα!<br><br>
+                        <a href="tel:2106728888"><img src="img/call_palazzocafe.png">210 6728888</a><br><br>
+                        <a href="tel:2106721520"><img src="img/call_palazzocafe.png">210 6721520</a></p>
+                        <a href="https://www.facebook.com/palazzodelivery" target="-"blank""><img src="img/palazzo_facebook.png"></a>
+                        <a href="https://twitter.com/PalazzoDelivery" target="-"blank""><img src="img/palazzo_twitter.png"></a>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8">
+                    <h2 class="indent1 wow fadeInDown" data-wow-delay="0.1s">Φορμα Επικοινωνιας</h2>
+                    <form id="contact-form">
+                          <div class="contact-form-loader"></div>
+                          <fieldset>
+                            <label class="name form-div-1">
+                              <input type="text" name="name" placeholder="* Το Όνομα σας:" value="" data-constraints="@Required @JustLetters"  />
+                              <span class="empty-message">*Υποχρεωτικό πεδίο.</span>
+                              <span class="error-message">*This is not a valid name.</span>
+                            </label>
+                            <label class="email form-div-2">
+                              <input type="text" name="email" placeholder="* e-mail:" value="" data-constraints="@Required @Email" />
+                              <span class="empty-message">*Υποχρεωτικό πεδίο.</span>
+                              <span class="error-message">*This is not a valid email.</span>
+                            </label>
+                            <label class="phone form-div-3">
+                              <input type="text" name="phone" placeholder="Το Τηλέφωνο σας:" value="" data-constraints="@JustNumbers" />
+                              <span class="empty-message">*Υποχρεωτικό πεδίο.</span>
+                              <span class="error-message">*This is not a valid phone.</span>
+                            </label>
+                            <label class="message form-div-4">
+                              <textarea name="message" placeholder="* Σχόλια & Ερωτήσεις:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                              <span class="empty-message">*Υποχρεωτικό πεδίο.</span>
+                              <span class="error-message">*The message is too short.</span>
+                            </label>
+                            <!-- <label class="recaptcha"><span class="empty-message">*This field is required.</span></label> -->
+                            <div class="btns">
+                                <a href="#" data-type="submit" class="btn-default btn3">Αποστολη</a>
+                                <p>*Υποχρεωτικά πεδία</p>
+                            </div>
+                          </fieldset> 
+                          <div class="modal fade response-message">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                  <h4 class="modal-title">Modal title</h4>
+                                </div>
+                                <div class="modal-body">
+                                  Το μήνυμα σας έχει αποσταλεί, θα επικοινωνήσουμε μαζί σας το συντομότερο δυνατόν.
+                                </div>      
+                              </div>
+                            </div>
+                          </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer-->
+<div class="stellar-section">
+    <footer data-stellar-background-ratio="-0.2"> 
+        <div class="container">
+            <figure class="wow fadeInDown"><img src="img/logo.png" alt=""></figure>
+            <p class="wow fadeInUp">Copyright &copy; <em id="copyright-year"></em> | <a href="oroi-xrisis-palazzo.html">Privacy Policy</a></p>
+        </div>
+    </footer>
+</div>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/tm-scripts.js"></script>
+<script type="text/javascript"> 
+          google_api_map_init(); 
+          function google_api_map_init(){ 
+            var map; 
+            var coordData = new google.maps.LatLng(parseFloat(38.007681), parseFloat(23.791541,14)); 
+            var markCoord1 = new google.maps.LatLng(parseFloat(38.007681), parseFloat(23.791541,14)); 
+             var markCoord2 = new google.maps.LatLng(parseFloat(38.007681), parseFloat(23.791541,14)); 
+             var markCoord3 = new google.maps.LatLng(parseFloat(38.007681), parseFloat(23.791541,14)); 
+             var markCoord4 = new google.maps.LatLng(parseFloat(38.007681), parseFloat(23.791541,14)); 
+             var markCoord5 = new google.maps.LatLng(parseFloat(38.007681), parseFloat(23.791541,14)); 
+            var marker; 
+ 
+            var styleArray = [
+    {
+        "featureType": "water",
+        "stylers": [
+            {
+                "saturation": 43
+            },
+            {
+                "lightness": -11
+            },
+            {
+                "hue": "#0088ff"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "hue": "#ff0000"
+            },
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 99
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#808080"
+            },
+            {
+                "lightness": 54
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.man_made",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#ece2d9"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#ccdca1"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#767676"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.natural",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#b8cb93"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.sports_complex",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.medical",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.business",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    }
+]
+             
+            var markerIcon = { 
+                url: "img/gmap_marker.png", 
+                size: new google.maps.Size(114, 114), 
+                origin: new google.maps.Point(0,0), 
+                anchor: new google.maps.Point(21, 70) 
+            }; 
+            function initialize() { 
+              var mapOptions = { 
+                zoom: 14, 
+                center: coordData, 
+                scrollwheel: false, 
+                styles: styleArray 
+              } 
+ 
+              var contentString = "<div></div>"; 
+              var infowindow = new google.maps.InfoWindow({ 
+                content: contentString, 
+                maxWidth: 200 
+              }); 
+               
+              var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions); 
+              marker = new google.maps.Marker({ 
+                map:map, 
+                position: markCoord1, 
+                icon: markerIcon
+              }); 
+              
+               var contentString = '<div id="content">'+
+                '<div id="siteNotice">'+
+                '</div>'+
+                '<div id="bodyContent">'+
+                '<p>Ηρώων Πολυτεχνείου 39, Κάτω Χαλάνδρι <span>210 6728888</span> <span>210 6721520</span></p>'+
+                '</div>'+
+                '</div>';
+
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+
+
+            google.maps.event.addListener(marker, 'click', function() {
+              infowindow.open(map,marker);
+              $('.gm-style-iw').parent().parent().addClass("gm-wrapper");
+            });
+
+
+            google.maps.event.addDomListener(window, 'resize', function() {
+
+              map.setCenter(coordData);
+
+              var center = map.getCenter();
+            });
+          }
+
+            google.maps.event.addDomListener(window, "load", initialize); 
+
+          }    
+</script>
+</body>
+</html>
